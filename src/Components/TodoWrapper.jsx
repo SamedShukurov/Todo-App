@@ -1,10 +1,10 @@
 import  { useState } from "react";
-import { Todo } from "./Todo.jsx";
-import { TodoForm } from "./TodoForm.jsx";
-import { EditTodoForm } from "./EditTodoForm.jsx";
+import  Todo  from "./Todo";
+import  TodoForm  from "./TodoForm";
+import  EditTodoForm  from "./EditTodoForm";
 import { v4 as uuidv4 } from "uuid";
 
-export const TodoWrapper = () => {
+function TodoWrapper () {
   const [todos, setTodos] = useState([]);
 
   const addTodo = (todo) => {
@@ -60,3 +60,5 @@ export const TodoWrapper = () => {
     </div>
   );
 };
+
+export default TodoWrapper
